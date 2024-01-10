@@ -15,7 +15,7 @@
   <div class="w-full">
     <header class="hi fixed-top d-flex justify-content-center flex-wrap  py-3 mb-4 border-bottom  shadow-lg">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <span class="fs-4 text-white p-2"><img src="./assets/qr.png" alt="" width="30" height="30"></span>
+        <span class="fs-4 text-white p-2"><img src="./assets//qr.png" alt="" width="30" height="30"></span>
       </a>
 
       <ul class="nav nav-pills">
@@ -23,28 +23,30 @@
       </ul>
     </header>
   </div>
+
   <div class="corps">
     <div class="formulaire" name="formulaire">
       <form action="" method="POST" name="form1">
         <div class="">
           <div class="">
+            <p class="titre">adresse</p>
+            <input type="text" name="adresse" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
+          </div>
+          <div class="">
             <p class="titre">Nom</p>
-            <input type="text" name="Prenom" class="form-control" oninput="change(this)" required>
+            <input type="text" name="nom" class="form-control" oninput="change(this)" required>
           </div>
           <div class="">
             <p class="titre">prenom</p>
-            <input type="text" name="Nom" oninput="change(this)" class="form-control" required>
+            <input type="text" name="prenom" oninput="change(this)" class="form-control" required>
           </div>
         </div>
-        <div class="">
-          <p class="titre">adresse</p>
-          <input type="text" name="Matricule" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
-        </div>
+       
 
         <div class="">
           <div class="titre-input1">
             <p class="titre">Numero Tel</p>
-            <input type="tel" pattern="^[0-9]{8}" class="form-control" oninput="change(this)" name="Numero" required>
+            <input type="text" pattern="^[0-9]{8}" class="form-control" oninput="change(this)" name="numero" required>
           </div>
           <div class="">
             <p class="titre">Email</p>
@@ -56,15 +58,19 @@
 
         <div class="">
           <p class="titre">Entreprise</p>
-          <input type="text" class="form-control" oninput="change(this)" name="dateNaissance">
+          <input type="text" class="form-control" oninput="change(this)" name="entreprise">
         </div>
         <div class="">
           <p class="titre">Reseaux sociaux</p>
-          <input type="text" name="Password" oninput="change(this)" class="form-control" required>
+          <input type="text" name="reseaux" oninput="change(this)" class="form-control" required>
         </div>
         <div class="">
-          <label for="Genre" class="titre">pays</label>
-          <input type="text" name="Genre" class="form-control" oninput="change(this)" required>
+          <p class="titre">pays</p>
+          <input type="text" name="pays" class="form-control" oninput="change(this)" required>
+        </div>
+        <div class="">
+          <p class="titre">site-web</p>
+          <input type="text" name="site" class="form-control" oninput="change(this)" required>
         </div>
     </div>
     </form>
