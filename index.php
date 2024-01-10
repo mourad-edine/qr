@@ -7,8 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/formulaire.css">
   <link rel="stylesheet" href="./css/feuille.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,7 +24,9 @@
   </div>
   <div class="corps">
     <div class="formulaire" name="formulaire">
+
       <form action="" method="POST" name="form1">
+        
         <div class="">
           <p class="titre">nom</p>
           <input type="text" name="Nom" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
@@ -48,7 +49,7 @@
         </div>
         <div class="">
           <p class="titre">site web</p>
-          <input type="text" name="site" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
+          <input type="text" name="Site" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
         <div class="">
           <p class="titre">Reseaux sociaux</p>

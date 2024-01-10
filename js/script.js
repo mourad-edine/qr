@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const messageValeur = document.querySelector('.information').children[1];
-  let nom = '', prenom = '', adresse = '', valeur = 'Aucune valeur';
+  let nom = '', prenom = '',email="", adresse = '',pays ='',numero="",site="",reseaux="",entreprise="",valeur = 'Aucune valeur';
 
   const qr = new QRious({
     element: document.querySelector('.qrious'),
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function updateQRCode() {
-    valeur = `- Nom : ${nom} - Prenom : ${prenom} - Adresse : ${adresse}`;
+    valeur = `- Nom : ${nom} - Prenom : ${prenom} - Adresse : ${adresse} - Email : ${numero} - Pays : ${pays} - Site : ${site}- Reseaux : ${reseaux} - entreprise : ${entreprise}`;
     qr.value = valeur;
     messageValeur.innerHTML = qr.value;
   }
@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
       case 'Adresse':
         adresse = element.value;
+        break
+        case 'Numero':
+        numero = element.value;
+        break;
+      case 'Site':
+        site = element.value;
+        break;
+      case 'Pays':
+        pays = element.value;
+        break
+      case 'Reseaux':
+        reseaux = element.value;
         break;
     }
     updateQRCode();
