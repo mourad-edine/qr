@@ -27,44 +27,32 @@
     <div class="formulaire" name="formulaire">
       <form action="" method="POST" name="form1">
         <div class="">
-          <div class="">
-            <p class="titre">Nom</p>
-            <input type="text" name="Prenom" class="form-control" oninput="change(this)" required>
-          </div>
-          <div class="">
-            <p class="titre">prenom</p>
-            <input type="text" name="Nom" oninput="change(this)" class="form-control" required>
-          </div>
+          <p class="titre">nom</p>
+          <input type="text" name="Nom" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
+        </div>
+        <div class="">
+          <p class="titre">Prenom</p>
+          <input type="text" name="Prenom" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
         <div class="">
           <p class="titre">adresse</p>
-          <input type="text" name="Matricule" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
+          <input type="text" name="Adresse" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
-
         <div class="">
-          <div class="titre-input1">
-            <p class="titre">Numero Tel</p>
-            <input type="tel" pattern="^[0-9]{8}" class="form-control" oninput="change(this)" name="Numero" required>
-          </div>
-          <div class="">
-            <p class="titre">Email</p>
-            <input type="email" name="email" class="form-control" oninput="change(this)" placeholder="Ex:you@gmail.com"
-              pattern="(^[a-z0-9]+)@([a-z0-9])+(\.)([a-z]{2,4})" required>
-
-          </div>
+          <p class="titre">Numero</p>
+          <input type="text" name="Numero" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
-
         <div class="">
-          <p class="titre">Entreprise</p>
-          <input type="text" class="form-control" oninput="change(this)" name="dateNaissance">
+          <p class="titre">pays</p>
+          <input type="Pays" name="Pays" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
+        </div>
+        <div class="">
+          <p class="titre">site web</p>
+          <input type="text" name="site" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
         <div class="">
           <p class="titre">Reseaux sociaux</p>
-          <input type="text" name="Password" oninput="change(this)" class="form-control" required>
-        </div>
-        <div class="">
-          <label for="Genre" class="titre">pays</label>
-          <input type="text" name="Genre" class="form-control" oninput="change(this)" required>
+          <input type="text" name="Reseaux" class="form-control" oninput="change(this)" pattern="^[0-9]{6}" required>
         </div>
     </div>
     </form>
