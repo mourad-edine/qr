@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login | register</title>
-    <!---Custom CSS File--->
     <link rel="stylesheet" href="./css/login.css">
 </head>
+
 
 <body>
     <div class="container">
@@ -19,11 +19,11 @@
             <form action="verification.php" method="POST">
                 <div style="display: flex; justify-content : center">
                     <?php
-                    if (isset($_GET['message']) && $_GET['message'] === 'incorrect') {
+                    /*if (isset($_GET['message']) && $_GET['message'] === 'incorrect') {
                         echo '<div class="alert alert-primary" role="alert">
                 Identifiant incorrect
               </div>';
-                    }
+                    }*/
                     ?>
                 </div>
                 <input type="text" placeholder="Entrer votre email" name="mail">

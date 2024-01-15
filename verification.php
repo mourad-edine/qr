@@ -51,7 +51,7 @@ try {
         header('Location: index.php'); 
         exit();
     } else {
-        header('Location: login.php?message=incorrect');
+        echo"<h1>incorect</h1>";
     }
 } catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
