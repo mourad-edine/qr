@@ -4,8 +4,8 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit();
+  header('Location: login.php');
+  exit();
 }
 $id = $_SESSION['user_id'];
 ?>
@@ -28,7 +28,7 @@ $id = $_SESSION['user_id'];
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $pdo->prepare("SELECT * FROM utilisateur,qrinfo WHERE utilisateur.id = qrinfo.id AND qrinfo.id_utilisateur='$id'");
+    $stmt = $pdo->prepare("SELECT * FROM qrinfo WHERE id_utilisateur='$id'");
     $stmt->execute();
 
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -134,8 +134,6 @@ $id = $_SESSION['user_id'];
     </div>
 
   </div>
-  <script src="./js/qrious.js"></script>
-  <script src="./js/index.js"></script>
 </body>
 
 </html>
