@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 12 jan. 2024 à 11:09
+-- Généré le : jeu. 18 jan. 2024 à 08:47
 -- Version du serveur : 8.0.34
 -- Version de PHP : 8.2.6
 
@@ -40,7 +40,8 @@ CREATE TABLE `qrinfo` (
   `site` varchar(200) NOT NULL,
   `facebook` varchar(100) DEFAULT NULL,
   `instagram` varchar(100) DEFAULT NULL,
-  `twitter` varchar(100) DEFAULT NULL
+  `twitter` varchar(100) DEFAULT NULL,
+  `indice` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- --------------------------------------------------------
@@ -56,18 +57,6 @@ CREATE TABLE `utilisateur` (
   `email` varchar(200) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
--- Déchargement des données de la table `utilisateur`
---
-
-INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `email`, `password`) VALUES
-(1, 'chams', 'pierre', 'francis@gmail.com', '1234'),
-(2, 'cdscs', 'csdcsd', 'csdcs', 'csdc'),
-(3, 'cic', 'los', 'lo@gmail.com', '1234'),
-(4, 'mr', 'mr', 'mr@gmail.com', '1234'),
-(5, 'varesh', 'misa', 'mos@gmail.com', '1234'),
-(6, 'fMarco', 'polo', 'polo@gmail.com', '1234');
 
 --
 -- Index pour les tables déchargées
@@ -94,13 +83,13 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `qrinfo`
 --
 ALTER TABLE `qrinfo`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Contraintes pour les tables déchargées
