@@ -1,18 +1,40 @@
 .corps{
     display: flex;
+    justify-content: center;
     margin-top: 100px;
    
 }
+.edit{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+
 .formulaire{
     margin-left:auto;
     margin-right:25px;
+}
+
+.doe {
+    width: 600px;
+    margin: auto;
+    border: 1px solid;
+    padding: 15px;
+
 }
 .code_qr{
 font-size: 15px;
 margin-top: 30px;
 margin-right: auto;
-width: 250px;
-max-width: 250px;
+width: 500px;
+max-width: 500px;
 
 }
 
+@media screen and (max-width: 700px) {
+    .corps {
+      display: block;
+      /* Autres styles... */
+    }
+  }

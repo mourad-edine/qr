@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
 
 <head>
@@ -10,20 +9,27 @@
     <link rel="stylesheet" href="./css/login.css">
 </head>
 
+<?php
+session_start();
 
+if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit();
+}
+?>
 <body>
     <div class="container">
         <input type="checkbox" id="check">
         <div class="login form">
             <header>Login</header>
-            <form action="verification.php" method="POST">
+            <form action="log.php" method="POST">
                 <div style="display: flex; justify-content : center">
                     <?php
-                    /*if (isset($_GET['message']) && $_GET['message'] === 'incorrect') {
-                        echo '<div class="alert alert-primary" role="alert">
+                    if (isset($_GET['message']) && $_GET['message'] === 'incorrect') {
+                        echo '<div class="" role="alert">
                 Identifiant incorrect
               </div>';
-                    }*/
+                    }
                     ?>
                 </div>
                 <input type="text" placeholder="Entrer votre email" name="mail">
