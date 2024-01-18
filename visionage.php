@@ -13,15 +13,15 @@
 require_once('./database/database.php');
 
 
-if (isset($_GET["indice"])) {
-    $indice = $_GET["indice"];
+if (isset($_GET["code"])) {
+    $id = $_GET["code"];
 }
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $pdo->prepare("SELECT * FROM qrinfo WHERE indice='$indice'");
+    $stmt = $pdo->prepare("SELECT * FROM qrinfo WHERE id_utilisateur='$id'");
     $stmt->execute();
 
     $row = $stmt->fetch(PDO::FETCH_ASSOC);

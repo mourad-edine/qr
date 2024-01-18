@@ -142,7 +142,7 @@ require_once('header.php');
           <div class="input-nom-prenom ">
 
            <div class="">
-              <input id="nom" type="hidden" value="' . $row['indice'] . '" name="indice" id="indice" class="form-control" oninput="change(this)" required>
+              <input id="nom" type="hidden" value="' . $row['util'] . '" name="util" id="indice" class="form-control" oninput="change(this)" required>
           </div>
           <button type="submit" name="png" class="btn btn-info text-white mb-4">
               télécharger mon QRCODE
